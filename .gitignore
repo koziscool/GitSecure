@@ -33,3 +33,5 @@ git_data/
 services/email/mandrillapi.js
 git_data/*
 db
+
+client/lib/*

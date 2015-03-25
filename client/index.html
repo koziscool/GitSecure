@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='GitSecure'>
+  <head>
+    <meta charset="utf-8" />
+        <script src="lib/bower_components/angular/angular.js"></script>
+    <script src="lib/bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app/app.js"></script>
+    <title>GitSecure</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    
+
+
+    <div ng-controller="showResults">
+
+       <h1  ng-view="results()"> {{ display }} </h1>
+
+
+  </body>
+</html>
