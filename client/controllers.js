@@ -40,24 +40,25 @@ angular.module('main',['ngMaterial'])
 
 $scope.showReports = function(){
     console.log('show report called!');
-    $scope.report1 =  
-                [{"results":[{"component":"qs","version":"0.5.6","parent":{"component":"tiny-lr-fork","version":"0.0.5","parent":{"component":"grunt-contrib-watch","version":"0.6.1","parent":{"component":"GitSecure","version":"0.0.1"},"level":1},"level":2},"level":3,"vulnerabilities":["https://nodesecurity.io/advisories/qs_dos_extended_event_loop_blocking"]}]}]
-                ;
-    $scope.report2  =   'more report crap';
+    $scope.reportdata.report1 =  'parse results'
+                // [{"results":[{"component":"qs","version":"0.5.6","parent":{"component":"tiny-lr-fork","version":"0.0.5","parent":{"component":"grunt-contrib-watch","version":"0.6.1","parent":{"component":"GitSecure","version":"0.0.1"},"level":1},"level":2},"level":3,"vulnerabilities":["https://nodesecurity.io/advisories/qs_dos_extended_event_loop_blocking"]}]}]
+                // ;
+    $scope.reportdata.report2  =     'scan results';
        // { '../2015-02-twittler/data_generator.js': 
        //       [ { type: 'finding',
-       //           rule: [Object],
+       //           rule: [],
        //           filename: '../2015-02-twittler/data_generator.js',
        //           line: 55,
        //           col: undefined },
        //         filename: '../2015-02-twittler/data_generator.js' ],
        //      '../2015-02-twittler/jquery.js': 
        //       [ { type: 'finding',
-       //           rule: [Object],
+       //           rule: [],
        //           filename: '../2015-02-twittler/jquery.js',
        //           line: 358,
        //           col: undefined }
        //           ;
+    $scope.reportdata.report3  =     'retire results';
   };
 
 

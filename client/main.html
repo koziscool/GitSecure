@@ -23,15 +23,20 @@
         </md-tab-template>
       </md-tab>
       <md-tab id="tab3">
-        <md-tab-label class="md-subhead" ng-init="report1='Lorem ipsum'" ng-click="showReports()">
+        <md-tab-label class="md-subhead" ng-init="reportdata.report1='Lorem ipsum'" ng-click="showReports()">
                    Results</md-tab-label>
         <md-tab-template>
           <p class="md-body-1">  
-                  {{  report1 }}
+                  {{  reportdata.report1 }}
           </p>
-          <p class="md-body-1"  ng-init="report2='More lorem ipsum'"  ng-click="showReports()" > 
-                    {{ report2 }}
+          <p class="md-body-1"  ng-init="reportdata.report2='More lorem ipsum'"  > 
+                    {{ reportdata.report2 }}
        </p>
+          <p class="md-body-1"  ng-init="reportdata.report3='Additional lorem ipsum'"  > 
+                    {{ reportdata.report3 }}
+       </p>
+ 
+
         </md-tab-template>
       </md-tab>
     </md-tabs>
