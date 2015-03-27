@@ -18,6 +18,7 @@
              <input type="checkbox" data-repo-id="{{ repo.id }}" data-git-url="{{ repo.git_url }}" data-url="{{repo.html_url}}" data-user-id="{{ repo.owner.id }}" data-repo-name="{{ repo.name }}"/>
              {{ repo.name }}
              <br>
+
            </li>
          </ul>
         </md-tab-template>
@@ -33,8 +34,18 @@
         </div>
           <ul>
             <li class="md-body-1" ng-repeat="data in results">
-              {{ repo.name }}
+              {{ data.name }}
               <br>
+                      <p class="md-body-1">  
+                              {{  data.report1 }}
+                      </p>
+                      <p class="md-body-1"  ng-init="data.report2='More lorem ipsum'"  > 
+                                {{ data.report2 }}
+                   </p>
+                      <p class="md-body-1"  ng-init="data.report3='Additional lorem ipsum'"  > 
+                                {{ data.report3 }}
+                   </p>
+
             </li>
           </ul>
         </md-tab-template>
