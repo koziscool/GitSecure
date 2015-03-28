@@ -48,7 +48,7 @@ window.angular.module('main',['ngMaterial'])
 
   $scope.getResults = function(){
     mainly.getResults(function(data){
-
+      console.log('data', data);
 
       var repoReport = {};
 
